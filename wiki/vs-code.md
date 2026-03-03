@@ -16,7 +16,6 @@
 - [`Command Palette`](#command-palette)
   - [Open the `Command Palette`](#open-the-command-palette)
   - [Run a command using the `Command Palette`](#run-a-command-using-the-command-palette)
-  - [Open the file using `Quick Open`](#open-the-file-using-quick-open)
   - [Select an option from a list](#select-an-option-from-a-list)
 - [`Panel Toolbar`](#panel-toolbar)
 - [`VS Code Terminal`](#vs-code-terminal)
@@ -59,6 +58,7 @@
     - [(`Windows` only) Open the directory in `WSL`](#windows-only-open-the-directory-in-wsl)
     - [(`Windows` only) Reopen the directory in `WSL`](#windows-only-reopen-the-directory-in-wsl)
   - [Open the file](#open-the-file)
+    - [Open the file using `Quick Open`](#open-the-file-using-quick-open)
     - [Open the file using `code`](#open-the-file-using-code)
     - [Open the file using a context menu](#open-the-file-using-a-context-menu)
   - [Open the `Markdown` preview](#open-the-markdown-preview)
@@ -188,7 +188,6 @@ Actions:
 
 - [Open the `Command Palette`](#open-the-command-palette)
 - [Run a command using the `Command Palette`](#run-a-command-using-the-command-palette)
-- [Open the file using `Quick Open`](#open-the-file-using-quick-open)
 
 ### Open the `Command Palette`
 
@@ -199,12 +198,6 @@ Actions:
 1. [Open the `Command Palette`](#open-the-command-palette).
 2. Start typing a command.
 3. [Select](#select-an-option-from-a-list) the necessary command.
-
-### Open the file using `Quick Open`
-
-1. Press `Ctrl+P` (`Cmd+P` on `macOS`).
-2. Start typing the name of the file.
-3. [Select](#select-an-option-from-a-list) the file.
 
 ### Select an option from a list
 
@@ -640,6 +633,12 @@ Here are some [workspace settings](#workspace-settings) that you can change:
 - Method 2: [Open the file using `Quick Open`](#open-the-file-using-quick-open)
 - Method 3: [Open the file using `code`](#open-the-file-using-code)
 - Method 4: [Open the file using a context menu](#open-the-file-using-a-context-menu)
+
+#### Open the file using `Quick Open`
+
+1. Press `Ctrl+P` (`Cmd+P` on `macOS`).
+2. Start typing the name of the file.
+3. [Select](#select-an-option-from-a-list) the file.
 
 #### Open the file using `code`
 
