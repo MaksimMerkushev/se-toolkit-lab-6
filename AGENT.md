@@ -65,3 +65,19 @@ You are helping a student complete a software engineering lab. Your role is to m
 - `.env.docker.secret` — backend API credentials (gitignored).
 
 - Agent uses OpenRouter with google/gemini-3-flash-preview. It outputs structured JSON and manages token limits via max_tokens."
+
+# Agent Documentation
+
+## Architecture
+This agent operates using an agentic loop (ReAct pattern). It communicates with the Gemini 3 Flash model via OpenRouter.
+
+## Tools
+The agent has access to two tools to explore the local repository:
+- `list_files(path)`: Lists directory contents.
+- `read_file(path)`: Reads file contents.
+
+**Security:** Both tools use `os.path.commonpath` to ensure the agent cannot perform directory traversal attacks (e.g., reading files outside the project root).
+
+## Loop Execution
+The agent runs a `while` loop (up to 10 iterations). It parses `tool_calls` from the LLM, executes the local Python functions, and appends the results back into the conversation history until the LLM produces a final answer.
+
